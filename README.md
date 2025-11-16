@@ -1,8 +1,9 @@
 Versions used:
 
 - Angular CLI: 14.1.2
-- Node: 20.0.0
+- Node: 16.10.0
 - Package Manager: npm 7.24.0
+
 
 Commands to run:
 
@@ -49,12 +50,4 @@ npm run build
 
 Demo:
 
-Part 1:
-https://user-images.githubusercontent.com/55496113/222206719-d38e3cba-c537-4454-aabf-2a54748bd906.mp4
-
-Part 2:
-https://user-images.githubusercontent.com/55496113/222206739-0734c767-515e-4983-aaf8-6ae063ac1304.mp4
-
-Part 3:
-https://user-images.githubusercontent.com/55496113/222206754-811f8975-0191-47a8-afe9-a66f7be50d81.mp4
-
+https://user-images.githubusercontent.com/55496113/222207821-6a9d94c2-6f16-4043-83a0-8502ea9956e5.mp4
