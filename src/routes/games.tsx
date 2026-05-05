@@ -1,12 +1,5 @@
-// @refresh reload
-import { Links, Scripts } from "solid-start/root";
-import { Meta } from "solid-start";
-import { Routes } from "solid-start/router";
-import { ErrorBoundary } from "solid-start/error-boundary";
-import { Suspense } from "solid-js";
-//import { Routes, Route, Router, Link } from "@solidjs/router";
-
-export default function Root() {
+// Games page with embedded HTML games
+export default function Games() {
     const hangman = `
    <!DOCTYPE html>
 <html lang="en">
@@ -6724,59 +6717,56 @@ body{
 `
 
   return (
-    <html lang="en">
-      <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <Meta />
-        <Links />
-      </head>
-      <body>
-        <ErrorBoundary>
-          <Suspense>
-        <Routes />
-            {/* <Route path="/blog" component={Blog} />
-        </Routes> */}
-          </Suspense>
-        </ErrorBoundary>
-        <Scripts />
-        <h4 id="calculator" 
-        onClick={() =>document.write(calculator)}
+    <main style={{ padding: "20px", "font-family": "Arial, sans-serif" }}>
+      <h1>Games Collection</h1>
+      
+      <h2>Embedded Games (Click to Play)</h2>
+      <div style={{ display: "flex", "flex-wrap": "wrap", gap: "10px", "margin-bottom": "20px" }}>
+        <h4 style={{ cursor: "pointer", padding: "10px", background: "#f0f0f0", "border-radius": "5px" }}
+        onClick={() => document.write(calculator)}
         >Calculator</h4>
-        <h4 id="clock"
-        onClick={() =>document.write(clock)}
+        <h4 style={{ cursor: "pointer", padding: "10px", background: "#f0f0f0", "border-radius": "5px" }}
+        onClick={() => document.write(clock)}
         >Clock</h4>
-        <h4 id="codepen"
-        onClick={() =>document.write(codepen)}
+        <h4 style={{ cursor: "pointer", padding: "10px", background: "#f0f0f0", "border-radius": "5px" }}
+        onClick={() => document.write(codepen)}
         >Codepen</h4>
-        <h4 id="dino"
-        onClick={() =>document.write(dino)}
+        <h4 style={{ cursor: "pointer", padding: "10px", background: "#f0f0f0", "border-radius": "5px" }}
+        onClick={() => document.write(dino)}
         >Dino</h4>
-        <h4 id="hangman"
-        onClick={() =>document.write(hangman)}
+        <h4 style={{ cursor: "pointer", padding: "10px", background: "#f0f0f0", "border-radius": "5px" }}
+        onClick={() => document.write(hangman)}
         >Hangman</h4>
-        <h4 id="keyboard"
-        onClick={() =>document.write(keyboard)}
+        <h4 style={{ cursor: "pointer", padding: "10px", background: "#f0f0f0", "border-radius": "5px" }}
+        onClick={() => document.write(keyboard)}
         >Keyboard</h4>
-        <h4 id="maze"
-        onClick={() =>document.write(maze)}
+        <h4 style={{ cursor: "pointer", padding: "10px", background: "#f0f0f0", "border-radius": "5px" }}
+        onClick={() => document.write(maze)}
         >Maze</h4>
-        <h4 id="sass_"
-        onClick={() =>document.write(sass_)}
+        <h4 style={{ cursor: "pointer", padding: "10px", background: "#f0f0f0", "border-radius": "5px" }}
+        onClick={() => document.write(sass_)}
         >Sass</h4>
-        <h4 id="solitaire"
-        onClick={() =>document.write(solitaire)}
+        <h4 style={{ cursor: "pointer", padding: "10px", background: "#f0f0f0", "border-radius": "5px" }}
+        onClick={() => document.write(solitaire)}
         >Solitaire</h4>
-        <h4 id="tic_tac_toe"
-        onClick={() =>document.write(tic_tac_toe)}
+        <h4 style={{ cursor: "pointer", padding: "10px", background: "#f0f0f0", "border-radius": "5px" }}
+        onClick={() => document.write(tic_tac_toe)}
         >Tic tac toe</h4>
-        <h4 id="tilt_maze"
-        onClick={() =>document.write(tilt_maze)}
+        <h4 style={{ cursor: "pointer", padding: "10px", background: "#f0f0f0", "border-radius": "5px" }}
+        onClick={() => document.write(tilt_maze)}
         >Tilt maze</h4>
-      <a href="./games/sudoku/sudoku.html">Sudoku</a><br/>
-      <a href="./games/chess/chess.html">Chess</a><br/>
-      <a href="./games/puzzles/puzzles.html">Puzzles</a><br/>
-      </body>
-    </html>
+      </div>
+
+      <h2>External Games</h2>
+      <div style={{ display: "flex", "flex-direction": "column", gap: "10px" }}>
+        <a href="/games/sudoku/sudoku.html">Sudoku</a>
+        <a href="/games/chess/chess.html">Chess</a>
+        <a href="/games/puzzles/puzzles.html">Puzzles</a>
+      </div>
+      
+      <p style={{ "margin-top": "20px" }}>
+        <a href="/">← Back to Home</a>
+      </p>
+    </main>
   );
 }

@@ -54,6 +54,9 @@ p {
         </a>{" "}
         to learn how to build Solid apps.
       </p>
+      <p>
+        <a href="/games">🎮 Play Games</a>
+      </p>
     </main>
   );
 }
