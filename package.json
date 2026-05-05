@@ -4,19 +4,21 @@
   "type": "module",
   "version": "1.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "start": "vite preview"
+    "dev": "solid-start dev",
+    "build": "solid-start build",
+    "start": "solid-start start"
   },
   "dependencies": {
-    "@solidjs/start": "^0.6.0",
-    "solid-js": "^1.8.15"
+    "solid-start": "^0.3.10",
+    "solid-js": "^1.8.15",
+    "@solidjs/router": "^0.8.3",
+    "@solidjs/meta": "^0.29.3"
   },
   "devDependencies": {
-    "vite": "^5.0.0",
-    "solid-start-vercel": "^0.2.0"
+    "solid-start-vercel": "^0.2.32",
+    "vite": "^4.5.0"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20 <25"
   }
 }
